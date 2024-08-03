@@ -24,7 +24,7 @@ app.use(session({
 
 async function connectDB(){
   try{
-    mongoose.connect("mongodb://127.0.0.1:27017/FoodShare",{});
+    mongoose.connect("mongodb+srv://iamtsanand:FoodShare123@foodshare.acmsvpc.mongodb.net/?authSource=foodShare&authMechanism=SCRAM-SHA-1",{});
     console.log("connected to mongodb");
   }catch(err){
     console.log("error in mongodb",err);
@@ -49,7 +49,7 @@ app.get('/profile', async (req, res) => {
     try {
       const user = await User.findById(userId); // Replace with actual user fetching logic
       if (user) {
-        res.render('Profile-page', { user });
+        res.render('Profile-Page', { user });
       } else {
         res.redirect('/login');
       }
@@ -67,14 +67,14 @@ app.get('/register', (req, res) => {
 });
 
 app.get('/ngos', (req, res) => {
-  res.render('NGO-Page');
+  res.render('NGO-page');
 });
 
 app.get('/banquets', (req, res) => {
   res.render('Banquets-page');
 });
 
-app.get('/about', (req, res) => {
+app.get('/aboutus', (req, res) => {
   res.render('About-Us-page');
 });
 
