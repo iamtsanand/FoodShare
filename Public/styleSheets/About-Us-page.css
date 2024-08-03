@@ -181,7 +181,7 @@ h3 {
 
 .list li::before {
     content: '';
-    position: absolute;
+    position: relative;
     left: 50%;
     bottom: 0;
     width: 0;
