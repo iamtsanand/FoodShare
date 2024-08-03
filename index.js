@@ -74,7 +74,7 @@ app.get('/banquets', (req, res) => {
   res.render('Banquets-page');
 });
 
-app.get('/aboutus', (req, res) => {
+app.get('/about', (req, res) => {
   res.render('About-Us-page');
 });
 
