@@ -95,7 +95,7 @@ body {
     width: 85%;
     margin: auto;
     background: url('https://sevalaya.org/wp-content/uploads/2021/07/Gudalur-food-distribution-Flood-relief-685x296.jpg') no-repeat center center;
-    background-size: cover; /* Cover the entire section */
+    background-size: 100% 100%; /* Cover the entire section */
     padding: 35px; /* Adjust padding if needed */
     color: white; /* Ensure text color contrasts with background */
 }
