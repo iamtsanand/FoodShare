@@ -1,8 +1,9 @@
+/* General Reset and Basic Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     font-size: 10px;
     color: white;
 }
@@ -12,8 +13,8 @@ body {
 }
 
 header {
-    height: auto;
-    width: auto;  
+      width: auto; 
+        height:auto; 
     background-color: #76323F;
     color: lightgrey;
     display: flex;
@@ -181,7 +182,7 @@ h3 {
 
 .list li::before {
     content: '';
-    position: relative;
+    position: absolute;
     left: 50%;
     bottom: 0;
     width: 0;
@@ -211,5 +212,3 @@ h3 {
     font-size: 24px; /* Optimal size for footer icons */
     transition: color 0.2s ease;
 }
-
-  
